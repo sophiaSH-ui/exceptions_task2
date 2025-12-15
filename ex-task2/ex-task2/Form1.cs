@@ -5,7 +5,6 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-
 namespace ex_task2
 {
     public partial class Form1 : Form
@@ -18,7 +17,7 @@ namespace ex_task2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string targetDir = @"C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows";
+            string targetDir = @"C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows\photo";
 
             if (!Directory.Exists(targetDir))
             {
@@ -29,17 +28,23 @@ namespace ex_task2
             string[] files = Directory.GetFiles(targetDir);
             Regex regexExtForImage = new Regex(@"^((bmp)|(gif)|(tiff?)|(jpe?g)|(png))$", RegexOptions.IgnoreCase);
 
+            int processedCount = 0;
+
             foreach (string filePath in files)
             {
+                if (filePath.Contains("-mirrored.gif")) continue;
+
                 try
                 {
                     using (Bitmap bmp = new Bitmap(filePath))
                     {
-                        bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                        bmp.RotateFlip(RotateFlipType.RotateNoneFlipX);
                         string fileNameNoExt = Path.GetFileNameWithoutExtension(filePath);
                         string newFileName = fileNameNoExt + "-mirrored.gif";
                         string savePath = Path.Combine(targetDir, newFileName);
                         bmp.Save(savePath, ImageFormat.Gif);
+
+                        processedCount++;
                     }
                 }
                 catch
@@ -48,15 +53,22 @@ namespace ex_task2
                     if (regexExtForImage.IsMatch(ext))
                     {
                         MessageBox.Show(
-                            $"Файл '{Path.GetFileName(filePath)}' пошкоджений.",
-                            "Увага",
+                            $"Знайдено битий файл: '{Path.GetFileName(filePath)}'\nРозширення правильне, але це не картинка.",
+                            "Увага, помилка файлу!",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
                     }
                 }
             }
-            MessageBox.Show("Готово!");
+
+            if (processedCount == 0)
+            {
+                MessageBox.Show("У папці не знайдено жодної нормальної картинки для обробки, або шлях досі неправильний.", "Пусто", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show($"Готово! Оброблено файлів: {processedCount}", "Успіх");
+            }
         }
     }
 }
-
