@@ -29,7 +29,33 @@ namespace ex_task2
             string[] files = Directory.GetFiles(targetDir);
             Regex regexExtForImage = new Regex(@"^((bmp)|(gif)|(tiff?)|(jpe?g)|(png))$", RegexOptions.IgnoreCase);
 
-            
+            foreach (string filePath in files)
+            {
+                try
+                {
+                    using (Bitmap bmp = new Bitmap(filePath))
+                    {
+                        bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                        string fileNameNoExt = Path.GetFileNameWithoutExtension(filePath);
+                        string newFileName = fileNameNoExt + "-mirrored.gif";
+                        string savePath = Path.Combine(targetDir, newFileName);
+                        bmp.Save(savePath, ImageFormat.Gif);
+                    }
+                }
+                catch
+                {
+                    string ext = Path.GetExtension(filePath).TrimStart('.');
+                    if (regexExtForImage.IsMatch(ext))
+                    {
+                        MessageBox.Show(
+                            $"Файл '{Path.GetFileName(filePath)}' пошкоджений.",
+                            "Увага",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            MessageBox.Show("Готово!");
 
         }
     }
