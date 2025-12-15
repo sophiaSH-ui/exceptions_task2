@@ -12,11 +12,11 @@ namespace ex_task2
     {
         public Form1()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             button1.Text = "Обробити папку photo";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             string targetDir = @"C:\Users\Asus\Desktop\exceptions-task2\ex_task2\ex_task2\bin\Debug\net9.0\photo";
 
@@ -56,7 +56,6 @@ namespace ex_task2
                 }
             }
             MessageBox.Show("Готово!");
-
         }
     }
 }

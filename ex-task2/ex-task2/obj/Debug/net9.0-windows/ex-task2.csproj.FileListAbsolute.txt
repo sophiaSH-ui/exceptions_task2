@@ -1,0 +1,17 @@
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows\ex-task2.exe
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows\ex-task2.deps.json
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows\ex-task2.runtimeconfig.json
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows\ex-task2.dll
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows\ex-task2.pdb
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex_task2.Form1.resources
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.AssemblyInfo.cs
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.sourcelink.json
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.dll
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\refint\ex-task2.dll
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.pdb
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ex-task2.genruntimeconfig.cache
+C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\obj\Debug\net9.0-windows\ref\ex-task2.dll
