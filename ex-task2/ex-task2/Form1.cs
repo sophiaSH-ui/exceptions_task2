@@ -18,7 +18,7 @@ namespace ex_task2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string targetDir = @"C:\Users\Asus\Desktop\exceptions-task2\ex_task2\ex_task2\bin\Debug\net9.0\photo";
+            string targetDir = @"C:\Users\Asus\Desktop\exceptions_task2\ex-task2\ex-task2\bin\Debug\net9.0-windows";
 
             if (!Directory.Exists(targetDir))
             {

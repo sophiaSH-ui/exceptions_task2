@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ex-task2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b97eb8cc8a2ed22c2a0b56bd7bb743d5a751013")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c0344b21ea15fffb65440d11c4ebf0f4c328af5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ex-task2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ex-task2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
